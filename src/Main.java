@@ -3,11 +3,6 @@
 void main() {
     Scanner teclado = new Scanner(System.in);
 
-  /*  do{
-        System.out.println("VETERINARIA");
-        System.out.println("INFORMACIÓN");
-    }
-    /*/
     //OBJETO CREADO DESDE EL CONSTRUCTOR VACIO
     Mascota pet = new Mascota();
 
