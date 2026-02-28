@@ -16,7 +16,7 @@ public class Mascota {
         this.NOMBRE = NOMBRE;
         this.ESPECIE = ESPECIE;
         this.EDAD = EDAD;
-        this.VACUNADO = false;
+        this.VACUNADO = VACUNADO;
         this.PESO = PESO;
     }
 
@@ -95,7 +95,7 @@ public class Mascota {
             System.out.println("LA MASCOTA YA ESTA VACUNADA");
             return this.VACUNADO;
         } else {
-            System.out.println("LA MASCOTA YA ESTA VACUNADA");
+            System.out.println("LA MASCOTA YA ESTABA VACUNADA");
             return this.VACUNADO;
         }
     }

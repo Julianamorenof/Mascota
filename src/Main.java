@@ -20,14 +20,21 @@ void main() {
 
         switch (OPCIONES) {
             case 1: {
-                System.out.println("INGRESE EL NOMBRE DE LA MASCOTA");
+                System.out.println("INGRESE EL NOMBRE DE LA MASCOTA: ");
                 String NOMBRE = teclado.next();
-                System.out.println("INGRESE LA ESPECIE DE LA MASCOTA");
+                System.out.println("INGRESE LA ESPECIE DE LA MASCOTA: ");
                 String ESPECIE = teclado.next();
-                System.out.println("INGRESE LA EDAD DE LA MASCOTA");
+                System.out.println("INGRESE LA EDAD DE LA MASCOTA: ");
                 int EDAD = teclado.nextInt();
-                System.out.println("INGRESE LA MASCOTA ESTA VACUNADA");
-                Boolean VACUNADO = teclado.nextBoolean();
+                System.out.println("INGRESE SI LA MASCOTA ESTA VACUNADA: ");
+                String RTAVACUNA = teclado.next();
+                boolean VACUNADO = false; // ES FALSO POR DEFECTO, AQUI ACTUALICE MI CODIGO ORIGINAL PARA OBTENER UN STRING COMO RESPUESTA Y FUNCIONE NORMAL
+
+                if (RTAVACUNA.equalsIgnoreCase("S") ||
+                        RTAVACUNA.equalsIgnoreCase("SI") ||
+                        RTAVACUNA.equalsIgnoreCase("1")) {
+                    VACUNADO = true;
+                }
                 System.out.println("INGRESE EL PESO DE LA MASCOTA");
                 double PESO = teclado.nextDouble();
 
@@ -89,6 +96,5 @@ void main() {
 
     } while (OPCIONES != 3);
 
-    teclado.close();
 
 }
