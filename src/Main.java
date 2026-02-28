@@ -5,7 +5,6 @@ void main() {
     Scanner teclado = new Scanner(System.in);
 
     //MENU CON DO-WHILE
-    //EL DO-WHILE SE REPITE HASTA QUE OPCIÓN SEA 6
     List<Mascota>ltsMascota = new ArrayList<>();
     int OPCIONES;
     int OPCIONES1;
